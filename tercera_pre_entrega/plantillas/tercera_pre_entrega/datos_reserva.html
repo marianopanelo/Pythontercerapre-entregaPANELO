@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado de la Búsqueda</title>
+</head>
+<body>
+    <h1>tu reserva</h1>
+    <p>guarde el codigo proque es el comprobante que reservo y no se podra volver a pedir , sino que se le dara de baja al codigo</p>
+    {% if reservas %}
+        <ul>
+            {% for reserva in reservas %}
+                <li>
+                    Nombre: {{ reserva.nombre }}<br>
+                    Fecha de Ingreso: {{ reserva.fecha_ingreso }}<br>
+                    Noches de Estadia: {{ reserva.noches_de_estadia }}<br>
+                    Cabaña: {{ reserva.cabaña }}<br>
+                    Total a Pagar: {{ reserva.total_a_pagar }}<br>
+                    Código de Reserva: {{ reserva.codigo_de_reserva }}<br>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No se encontró ninguna reserva con ese código.</p>
+    {% endif %}
+    <a href="{% url 'inicio' %}">
+        <button type="button">Volver al Inicio</button>
+    </a>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{% extends "index.html" %}
+{% load static %}
+{% block boton%}
+<a class="btn btn-primary" href="#about">reservar</a>
+{% endblock %}
+{% block contenidoACambiar%}
+<div class="container mt-5">
+<h2>le recordamos que si no se logueo , le daremos de baja su reserva, esto es para poder contactarlo ante cualquier problema</h2>
+<h2>no se olvide que nuestras cabañas se llaman : "El Refugio del Cóndor", "El Mirador de las Sierras", "El Abrazo de la Montaña", "Piedra del Águila"</h2>
+</div>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center">reservar</h3>
+                </div>
+                <div class="card-body">
+                <form action="/reservar/" method="post">
+                    {% csrf_token %}
+                <table>                   
+                    {{ formulario.as_table }}
+                </table>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{% extends "index.html" %}
+{% load static %}
+{% block boton%}
+<a class="btn btn-primary" href="#about">cabañas</a>
+{% endblock %}
+{% block contenidoACambiar%}
+
+
+
+<section class="projects-section bg-light" id="projects">
+    <div class="row gx-0 justify-content-center">
+        <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+                <div class="d-flex h-100">
+                    <div class="project-text w-100 my-auto text-center text-lg-right">
+                        <h4 class="text-white">Valle de los Cóndores, Córdoba:</h4>
+                        <p class="mb-0 text-white-50">El Valle de los Cóndores es una hermosa región en el norte de Córdoba, conocida por sus impresionantes paisajes montañosos y su ambiente natural. Este valle se encuentra en la Sierra de los Comechingones y ofrece vistas panorámicas, senderos para caminatas y oportunidades para observar la fauna local, especialmente los cóndores que dan nombre al lugar. Es un destino ideal para los amantes de la naturaleza y aquellos que buscan tranquilidad y belleza en un entorno montañoso.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="{% static 'tercera_pre_entrega/assets/img/cabaña1.jpg' %}" alt="El Refugio del Cóndor" /></div>
+            <div class="col-lg-6">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                            <h4 class="text-white">Cabaña "El Refugio del Cóndor"</h4><br>
+                            <p class="mb-0 text-white-50">Descripción: Una cabaña rústica con techo de paja, construida en piedra y madera, ubicada en un entorno tranquilo rodeado de montañas. Ideal para quienes buscan desconectarse y disfrutar de la naturaleza.</p><br><br>
+                            <ul class="mb-0 text-white-50">Servicios:
+                                <li class="mb-0 text-white-50">Desayuno campestre con productos locales</li>
+                                <li class="mb-0 text-white-50">Asador al aire libre</li>
+                                <li class="mb-0 text-white-50">Caminatas guiadas por senderos montañosos</li>
+                                <li class="mb-0 text-white-50">Acceso a un lago cercano para pescar</li><br><br>
+                            <ul class="mb-0 text-white-50">Actividades: 
+                                <li class="mb-0 text-white-50">Senderismo</li>
+                                <li class="mb-0 text-white-50">observación de aves</li>
+                                <li class="mb-0 text-white-50">pesca</li>
+                                <li class="mb-0 text-white-50">paseos a caballo</li><br><br>
+                            <h5 class="text-white">Precio: ARS 250,000 por noche.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="{% static 'tercera_pre_entrega/assets/img/cabaña2.jpg' %}" alt="..." /></div>
+            <div class="col-lg-6 order-lg-first">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                            <h4 class="text-white">Cabaña "El Mirador de las Sierras"</h4><br>
+                            <p class="mb-0 text-white-50">Descripción: Una cabaña rústica con techo de paja, construida en piedra y madera, ubicada en un entorno tranquilo rodeado de montañas. Ideal para quienes buscan desconectarse y disfrutar de la naturaleza.</p><br><br>
+                            <ul class="mb-0 text-white-50">Servicios:
+                                <li class="mb-0 text-white-50">Desayuno artesanal</li>
+                                <li class="mb-0 text-white-50">Chimenea interior</li>
+                                <li class="mb-0 text-white-50">Excursiones guiadas por la zona</li>
+                                <li class="mb-0 text-white-50">Zona de picnic con parrilla</li><br><br>
+                            <ul class="mb-0 text-white-50">Actividades: 
+                                <li class="mb-0 text-white-50">Trekking</li>
+                                <li class="mb-0 text-white-50">observación de aves</li>
+                                <li class="mb-0 text-white-50">fotografía de paisajes</li>
+                                <li class="mb-0 text-white-50">avistamiento de fauna local</li><br><br>
+                            <h5 class="text-white">Precio: ARS 200,000 por noche.</h5>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row gx-0 justify-content-center">
+        <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+                <div class="d-flex h-100">
+                    <div class="project-text w-100 my-auto text-center text-lg-right">
+                        <h4 class="text-white">Valle del Huasco, Mendoza, Argentina</h4>
+                        <p class="mb-0 text-white-50">El Valle del Huasco es una región situada en la provincia de Mendoza, en el oeste de Argentina. Este valle se destaca por sus paisajes variados que incluyen viñedos, montañas y ríos. La zona es conocida por su producción de vinos, especialmente en la región vitivinícola de la provincia. Además, el Valle del Huasco ofrece una combinación de actividades al aire libre, como senderismo y exploración de la naturaleza, con la posibilidad de disfrutar de la cultura del vino local.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="{% static 'tercera_pre_entrega/assets/img/cabaña3a.jpg' %}" alt="..." /></div>
+            <div class="col-lg-6">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                            <h4 class="text-white">Cabaña "El Abrazo de la Montaña"</h4><br>
+                            <p class="mb-0 text-white-50">Descripción: Cabaña de madera con un diseño rústico y acogedor. Rodeada de vegetación autóctona, es perfecta para aquellos que buscan tranquilidad y una conexión íntima con la naturaleza.</p><br><br>
+                            <ul class="mb-0 text-white-50">Servicios:
+                                <li class="mb-0 text-white-50">Desayuno con productos orgánicos</li>
+                                <li class="mb-0 text-white-50">Paseos en bicicleta</li>
+                                <li class="mb-0 text-white-50">Zona de fogón para reuniones nocturnas</li>
+                                <li class="mb-0 text-white-50">Wi-Fi gratuito para mantenerte conectado si lo deseas</li><br><br>
+                            <ul class="mb-0 text-white-50">Actividades: 
+                                <li class="mb-0 text-white-50">Ciclismo de montaña</li>
+                                <li class="mb-0 text-white-50"> fogatas nocturnas</li>
+                                <li class="mb-0 text-white-50">visitas a bodegas locales</li><br><br>
+                            <h5 class="text-white">Precio: ARS 180,000 por noche.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="{% static 'tercera_pre_entrega/assets/img/cabaña4a.jpg' %}" alt="..." /></div>
+            <div class="col-lg-6 order-lg-first">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                            <h4 class="text-white">Cabaña "Piedra del Águila"</h4><br>
+                            <p class="mb-0 text-white-50">Descripción: Cabaña de piedra con techos de madera, ofrece un ambiente acogedor y vistas panorámicas a las montañas. Un lugar perfecto para una escapada romántica o una estadía en familia.</p><br><br>
+                            <ul class="mb-0 text-white-50">Servicios:
+                                <li class="mb-0 text-white-50">Desayuno continental</li>
+                                <li class="mb-0 text-white-50">Tours de vino en la región</li>
+                                <li class="mb-0 text-white-50">Chimenea al aire libre</li>
+                                <li class="mb-0 text-white-50">Acceso a rutas de senderismo</li><br><br>
+                            <ul class="mb-0 text-white-50">Actividades: 
+                                <li class="mb-0 text-white-50">Visitas a viñedos</li>
+                                <li class="mb-0 text-white-50">rutas de senderismo</li>
+                                <li class="mb-0 text-white-50">meditación al aire libre</li>
+                                <li class="mb-0 text-white-50">observación de aves</li>
+                                <li class="mb-0 text-white-50">pesca</li>
+                                <li class="mb-0 text-white-50">paseos a caballo</li><br><br>
+                            <h5 class="text-white">Precio: ARS 300,000 por noche.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+</body>
+</html>

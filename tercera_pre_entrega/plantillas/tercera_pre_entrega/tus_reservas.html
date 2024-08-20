@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% extends "index.html" %}
+{% load static %}
+{% block boton%}
+<a class="btn btn-primary" href="#about">ver tus reservas</a>
+{% endblock %}
+{% block contenidoACambiar%}
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <h2>ver tus reservas</h2>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">codigo de reserva</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="{% url 'resultado_busqueda_reserva' %}" method="GET">
+                            <input type="text" name="codigo" id="codigo">
+                            <input type="submit" value="codigo">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}
+</body>
+</html>
