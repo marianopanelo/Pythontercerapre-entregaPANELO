@@ -8,6 +8,7 @@ Visualización de Detalles: Los usuarios pueden ver los detalles de sus reservas
 
 Instalación:
 Clona este repositorio:
+git clone https://github.com/marianopanelo/Pythontercerapre-entregaPANELO.git
 
 crea la carpeta entorno-virtual con 
 python -m venv entorno-virtual
