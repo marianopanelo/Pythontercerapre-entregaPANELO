@@ -22,6 +22,8 @@ pip freeze > requirements.txt
 en la carpeta , como minimo tiene que estar 
 #Python 3.11.9 (esta es la version de Python en la que se creo el proyecto)
 django==5.0.7 (la version de django utilizada)
+ahora intalo django con 
+pip install -r requirements.txt
 
 ya estaria esta parte, ahora veamos la base de datos
 si no se creo la base de datos correctamente (db.sqlite3), con
