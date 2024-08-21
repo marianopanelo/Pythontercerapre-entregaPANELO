@@ -599,8 +599,8 @@ progress {
 }
 
 .img-fluid {
-  width: 50%;
-  height: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .img-thumbnail {
@@ -11206,3 +11206,7 @@ body {
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity));
 }
 
+.img-familia{
+  width: 50%;
+  height: auto;
+}

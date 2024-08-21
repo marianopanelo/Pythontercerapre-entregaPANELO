@@ -9,13 +9,11 @@
     {% extends "index.html" %}
 {% load static %}
 {% block boton%}
-<a class="btn btn-primary" href="#about">comentanos</a>
+<a class="btn btn-primary" href="#anclar_boton">comentanos</a>
 {% endblock %}
 {% block contenidoACambiar%}
 
-<div class="container mt-5">
-    <h2>no se olvide que nuestras cabañas se llaman : "El Refugio del Cóndor", "El Mirador de las Sierras", "El Abrazo de la Montaña", "Piedra del Águila"</h2>
-
+<div class="container mt-5" id="anclar_boton">
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card">
@@ -29,10 +27,16 @@
                         <label for="nombre" class="form-label">nombre:</label>
                         <input type="text" class="form-control" id="nombre" name="nombre" required>
                     </div>
-                        <div class="mb-3">
-                            <label for="cabaña_hospedado" class="form-label">cabaña en la que se hospedado :</label>
-                            <input type="text" class="form-control" id="cabaña_hospedado" name="cabaña_hospedado" required>
-                        </div>
+                    <div class="mb-3">
+                        <label for="cabaña_hospedado" class="form-label">Cabaña en la que se hospedó:</label>
+                        <select id="cabaña_hospedado" name="cabaña_hospedado" class="form-control" required>
+                            <option value="">Selecciona una cabaña</option>
+                            <option value="El Refugio del Cóndor">El Refugio del Cóndor</option>
+                            <option value="El Mirador de las Sierras">El Mirador de las Sierras</option>
+                            <option value="El Abrazo de la Montaña">El Abrazo de la Montaña</option>
+                            <option value="Piedra del Águila">Piedra del Águila</option>
+                        </select>
+                    </div>
                         <div class="mb-3">
                             <label for="dia_en_el_que_se_hospedo" class="form-label">Fecha en la que se hospedó:</label>
                             <input type="date" class="form-control" id="dia_en_el_que_se_hospedo" name="dia_en_el_que_se_hospedo" required>

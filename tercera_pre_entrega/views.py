@@ -58,7 +58,7 @@ def reservar(req):
                 info = reservacion.cleaned_data
                 reserva = Reservas(nombre=info['nombre'], fecha_ingreso=info['fecha_ingreso'],cabaña=info['cabana'],noches_de_estadia=info['noches_de_estadia'],total_a_pagar=total_a_pagar,codigo_de_reserva= codigo_de_reserva)
                 reserva.save()#tengo q pasar por metodo get , por sistema el id de una ahora q lo tiene , ahora veo como lo paso x sistema
-                return redirect(f'/busqueda/?codigo={codigo_de_reserva}')
+                return redirect(f'/codigo/?codigo={codigo_de_reserva}')
             else: 
                 respuesta = "esa cabaña no existe , ver bien cual cabaña quiere reservar"
                 return HttpResponse(respuesta)

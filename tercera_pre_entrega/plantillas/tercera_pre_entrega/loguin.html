@@ -9,15 +9,15 @@
 {% extends "index.html" %}
 {% load static %}
 {% block boton%}
-<a class="btn btn-primary" href="#about">loguin</a>
+<a class="btn btn-primary" href="#anclar_boton">loguin</a>
 {% endblock %}
 {% block contenidoACambiar%}
-<div class="container mt-5">
+<div class="container mt-5" id="anclar_boton">
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="text-center">reservar</h3>
+                    <h3 class="text-center">registrarse</h3>
                 </div>
                 <div class="card-body">
                 <form action="/loguin/" method="post">
